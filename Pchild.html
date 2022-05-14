@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Css Selector</title>
+        <style>
+            body{
+                text-align: center;
+            }
+             div#a{
+
+                background-color: gray;
+            }
+            div#a > div#b{
+                background-color: aqua;
+                border: 1em solid white;
+            
+            }
+
+            div#a > div#b > div#c{
+                color: yellow;
+                background-color: black;
+                border: 1em solid white;
+            }
+         
+        </style>
+    </head>
+    <body>
+         <div id=a>Grand Parent
+            <div id="b">Parent
+                <div id="c">Child</div>
+            </div>
+        </div>
+    </body>
+</html>
